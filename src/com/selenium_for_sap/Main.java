@@ -19,8 +19,8 @@ public class Main {
       obj = new ChromeDriver();
       obj.manage().deleteAllCookies();
       obj.manage().window().maximize();
-      obj.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-      obj.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+      obj.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
+      obj.manage().timeouts().pageLoadTimeout(200, TimeUnit.SECONDS);
 
       obj.get(
           "https://my348520.sapbydesign.com/sap/public/ap/ui/repository/SAP_UI/HTMLOBERON5/client.html?client_type=html&app.component=/SAP_UI_CT/Main/root.uiccwoc&rootWindow=X&redirectUrl=/sap/public/ap/ui/runtime");
@@ -52,7 +52,10 @@ public class Main {
     try {
       obj.findElement(By.id("__item25")).click();
       Thread.sleep(3000);
-      obj.findElement(By.xpath("//div[start-with(@id, ‘__item’)]")).click();
+      obj.findElement(By.xpath("/descendant::div[starts-with(@id, '__item')][2]")).click();
+      Thread.sleep(20000);
+      obj.findElement(By.id("__pane1-searchField-I")).sendKeys("*" + "1723" + "*");
+      obj.findElement(By.id("__pane1-searchField-search")).click();
     }catch (Exception e){
       e.printStackTrace();
     }
