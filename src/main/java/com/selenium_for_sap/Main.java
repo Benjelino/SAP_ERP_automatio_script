@@ -2,7 +2,6 @@ package com.selenium_for_sap;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import javax.xml.bind.SchemaOutputResolver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;

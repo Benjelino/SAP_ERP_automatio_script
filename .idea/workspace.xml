@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c753e0d2-f3c0-4d8b-a2e1-d191560980f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Json.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/selenium_for_sap/JsonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/selenium_for_sap/pojo/SimpleTestCaseJsonPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Selenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Selenium.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Test_Selenium/com/selenium_for_sap/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/selenium_for_sap/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Json.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Json.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/selenium_for_sap/JsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/selenium_for_sap/JsonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +61,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JsonTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.selenium_for_sap.Main" />
+  <component name="RunManager" selected="Application.Json">
+    <configuration name="Json" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.selenium_for_sap.Json" />
       <module name="Test_Selenium" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.selenium_for_sap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonTest.fromJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JsonTest.getJsonData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test_Selenium" />
       <extension name="coverage">
         <pattern>
@@ -112,7 +100,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.selenium_for_sap" />
       <option name="MAIN_CLASS_NAME" value="com.selenium_for_sap.JsonTest" />
-      <option name="METHOD_NAME" value="fromJson" />
+      <option name="METHOD_NAME" value="getJsonData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonTest.stringify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Test_Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.selenium_for_sap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.selenium_for_sap" />
+      <option name="MAIN_CLASS_NAME" value="com.selenium_for_sap.JsonTest" />
+      <option name="METHOD_NAME" value="stringify" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,10 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Json" />
+        <item itemvalue="JUnit.JsonTest.getJsonData" />
         <item itemvalue="JUnit.JsonTest" />
+        <item itemvalue="JUnit.JsonTest.stringify" />
         <item itemvalue="JUnit.JsonTest.toJson" />
-        <item itemvalue="JUnit.JsonTest.fromJson" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -161,46 +166,54 @@
       <option name="project" value="LOCAL" />
       <updated>1597537923511</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added the json parsing class and functions">
+      <created>1597822932538</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597822932538</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add functions to get station marks and change grade" />
-    <option name="LAST_COMMIT_MESSAGE" value="add functions to get station marks and change grade" />
+    <MESSAGE value="added the json parsing class and functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the json parsing class and functions" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1597818202852">
+    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1597855061194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597818202852" />
+    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597855061194" />
     <state x="406" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1597777805777">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="406" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1597777805777" />
-    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597537917812">
+    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597822923378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597537917812" />
+    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597822923378" />
     <state x="300" y="119" key="FileChooserDialogImpl" timestamp="1597296470886">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="300" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597296470886" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1597820923531">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1597857502310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597820923531" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1597820923531">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597857502310" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1597857502310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597820923531" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1597820923531">
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597857502310" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1597857502310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597820923531" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1597820923531">
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597857502310" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1597857502310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597820923531" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597857502310" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1597296503364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

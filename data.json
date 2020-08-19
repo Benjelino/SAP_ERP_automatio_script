@@ -1,0 +1,15 @@
+[ {
+  "frightforwarder" : "KGL - Kiteko Ghana Ltd.",
+  "date" : "31.07.2020 08:53 PM UTC",
+  "district" : "Manso Amenfi",
+  "waybill" : 14702,
+  "ctordate" : "31-7-20",
+  "ctor" : 14589,
+  "puritydate" : "31-7-20",
+  "grade" : "P_TD_AGL",
+  "tonage" : 9,
+  "stationmarknquantity" : [ [ "40", "AGL-MAN -Manso Amenfi 2" ], [ "76", "AGL-MAN -Manso Amenfi fifty" ] ],
+  "inboundid" : "UNO-1452",
+  "outboundid" : "UNO-1452",
+  "secondaryid" : "0008270"
+} ]
