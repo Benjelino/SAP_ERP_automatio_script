@@ -9,12 +9,12 @@
   "puritydate" : "31-7-20",
   "grade" : "P_TD_AGL",
   "tonage" : 9,
-  "stationmarknquantity" : [ [ "50", "WAK_B_AGL - Wassa Akropong B-Wassa Akropong B" ] ],
-  "inboundid" : "Inbound delivery IAGL-3650 created",
-  "outboundid" : "UNO-1452",
-  "secondaryid" : "0008270",
+  "stationmarknquantity" : [ [ "180", "ENC_A_AGL - Enchi A-Enchi A" ] ],
+  "inboundid" : "Inbound delivery IAGL-3655 created",
+  "outboundid" : "Outbound delivery OAGL-5043 created",
+  "secondaryid" : "'0000893",
   "arrivaldate" : "30-07-2020",
   "offloadingdate" : "31-07-2020",
   "rejections" : 20,
-  "cropseason" : "Mc 01"
+  "cropseason" : "MC 01"
 } ]
