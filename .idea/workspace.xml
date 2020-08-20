@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c753e0d2-f3c0-4d8b-a2e1-d191560980f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Json.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Json.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/selenium_for_sap/JsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/selenium_for_sap/JsonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +59,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Json">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Json" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.selenium_for_sap.Json" />
+      <module name="Test_Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.selenium_for_sap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.selenium_for_sap.Main" />
       <module name="Test_Selenium" />
       <extension name="coverage">
         <pattern>
@@ -122,29 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonTest.toJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Test_Selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.selenium_for_sap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.selenium_for_sap" />
-      <option name="MAIN_CLASS_NAME" value="com.selenium_for_sap.JsonTest" />
-      <option name="METHOD_NAME" value="toJson" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Json" />
         <item itemvalue="JUnit.JsonTest.getJsonData" />
         <item itemvalue="JUnit.JsonTest" />
         <item itemvalue="JUnit.JsonTest.stringify" />
-        <item itemvalue="JUnit.JsonTest.toJson" />
       </list>
     </recent_temporary>
   </component>
@@ -173,47 +168,55 @@
       <option name="project" value="LOCAL" />
       <updated>1597822932538</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added json function">
+      <created>1597857565768</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597857565773</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add functions to get station marks and change grade" />
     <MESSAGE value="added the json parsing class and functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the json parsing class and functions" />
+    <MESSAGE value="added json function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added json function" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1597855061194">
+    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1597873357534">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597855061194" />
+    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597873357534" />
     <state x="406" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1597777805777">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="406" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1597777805777" />
-    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597822923378">
+    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597857560751">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597822923378" />
+    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597857560751" />
     <state x="300" y="119" key="FileChooserDialogImpl" timestamp="1597296470886">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="300" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597296470886" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1597857502310">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1597911016156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597857502310" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1597857502310">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597911016156" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1597911016156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597857502310" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1597857502310">
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597911016156" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1597911016156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597857502310" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1597857502310">
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597911016156" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1597911016156">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597857502310" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597911016156" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1597296503364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

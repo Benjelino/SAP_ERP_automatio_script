@@ -19,12 +19,16 @@ public class Data {
   private String inboundid;
   private String outboundid;
   private  String secondaryid;
+  private String arrivaldate;
+  private String offloadingdate;
 
 
   public Data(){}
+
   public Data(String frightforwarder, String date, String district, int waybill,
-      String ctordate, String secondaryid, int ctor, String puritydate, String grade, int tonage,
-      ArrayList<String[]> stationmarknquantity, String inboundid, String outboundid) {
+      String ctordate, int ctor, String puritydate, String grade, int tonage,
+      ArrayList<String[]> stationmarknquantity, String inboundid, String outboundid,
+      String secondaryid, String arrivaldate, String offloadingdate) {
     this.frightforwarder = frightforwarder;
     this.date = date;
     this.district = district;
@@ -38,6 +42,25 @@ public class Data {
     this.inboundid = inboundid;
     this.outboundid = outboundid;
     this.secondaryid = secondaryid;
+    this.arrivaldate = arrivaldate;
+    this.offloadingdate = offloadingdate;
+  }
+
+
+  public String getArrivaldate() {
+    return arrivaldate;
+  }
+
+  public void setArrivaldate(String arrivaldate) {
+    this.arrivaldate = arrivaldate;
+  }
+
+  public String getOffloadingdate() {
+    return offloadingdate;
+  }
+
+  public void setOffloadingdate(String offloadingdate) {
+    this.offloadingdate = offloadingdate;
   }
 
   public String getFrightforwarder() {

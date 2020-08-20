@@ -8,8 +8,10 @@
   "puritydate" : "31-7-20",
   "grade" : "P_TD_AGL",
   "tonage" : 9,
-  "stationmarknquantity" : [ [ "40", "AGL-MAN -Manso Amenfi 2" ], [ "76", "AGL-MAN -Manso Amenfi fifty" ] ],
-  "inboundid" : "UNO-1452",
+  "stationmarknquantity" : [ [ "50", "WAK_B_AGL - Wassa Akropong B-Wassa Akropong B" ] ],
+  "inboundid" : "Inbound delivery IAGL-3650 created",
   "outboundid" : "UNO-1452",
-  "secondaryid" : "0008270"
+  "secondaryid" : "0008270",
+  "arrivaldate" : "30-07-2020",
+  "offloadingdate" : "31-07-2020"
 } ]

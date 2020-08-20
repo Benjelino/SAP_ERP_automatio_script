@@ -1,5 +1,6 @@
 package com.selenium_for_sap;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -18,7 +19,7 @@ public class Main {
   private boolean rejected = false;
 
 
-  public void invokeBrowser() {
+  public void invokeBrowser(ArrayList<Data> list) {
     try {
       System.out.println("Hello");
       System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
@@ -32,11 +33,16 @@ public class Main {
           "https://my347340.sapbydesign.com/sap/public/ap/ui/repository/SAP_UI/HTMLOBERON5/client.html?client_type=html&app.component=/SAP_UI_CT/Main/root.uiccwoc&rootWindow=X&redirectUrl=/sap/public/ap/ui/runtime");
       mLogin();
       Thread.sleep(40000);
-      checkInbound();
+      for(Data p: list) {
+        checkInbound(p);
 //      checkOutbound();
-      Thread.sleep(30000);
-      fillInbound();
+        Thread.sleep(30000);
+        fillInbound(p);
 //      fillOutbound();
+        Json writer = new Json();
+        writer.addData(p);
+      }
+
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -58,13 +64,13 @@ public class Main {
     }
   }
 
-  public void checkInbound(){
+  public void checkInbound(Data data){
     try {
       obj.findElement(By.id("__item34")).click();
       Thread.sleep(2000);
       obj.findElement(By.xpath("/descendant::div[starts-with(@id, '__item')][2]")).click();
       Thread.sleep(20000);
-      obj.findElement(By.xpath("//input[starts-with(@id, '__pane') and contains(@id, '-searchField-I')]")).sendKeys("*" + "0003892" + "*");
+      obj.findElement(By.xpath("//input[starts-with(@id, '__pane') and contains(@id, '-searchField-I')]")).sendKeys("*" + data.getSecondaryid() + "*");
       obj.findElement(By.xpath("//div[starts-with(@id, '__pane') and contains(@id, '-searchField-search')]")).click();
       Thread.sleep(10000);
       String rowCount = obj.findElement(By.xpath("//table[@class='sapBUiListTab']")).getAttribute("aria-rowcount");
@@ -78,15 +84,15 @@ public class Main {
     }
   }
 
-  public void  fillInbound(){
+  public void  fillInbound(Data data){
     try {
 //    Fill takes date, internal waybill id, arrival date, date of offloading
       obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][1]")).clear();
-      obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][1]")).sendKeys("31.07.2020 08:53 PM UTC");
-      obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][2]")).sendKeys("14702");
-      obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][4]")).sendKeys("30-07-20");
-      obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][5]")).sendKeys("31-07-20");
-
+      obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][1]")).sendKeys(data.getDate());
+      obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][2]")).sendKeys(String.valueOf(data.getWaybill()));
+      obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][4]")).sendKeys(data.getArrivaldate());
+      obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][5]")).sendKeys(data.getOffloadingdate());
+      ArrayList<String[]> smnq = new ArrayList<String[]>();
       Thread.sleep(15000);
       obj.findElement(By.xpath("//span[.='Propose Quantities']")).click();
       JavascriptExecutor jse = (JavascriptExecutor) obj;
@@ -105,8 +111,8 @@ public class Main {
         String currentgrade = obj.findElement(By.xpath(grade)).getAttribute("value");
         String quantity= obj.findElement(By.xpath(row)).getAttribute("value");
         obj.findElement(By.xpath(grade)).clear();
-        obj.findElement(By.xpath(grade)).sendKeys("P_TD_AGL");
-        Thread.sleep(10000);
+        obj.findElement(By.xpath(grade)).sendKeys(data.getGrade());
+        Thread.sleep(15000);
         obj.findElement(By.xpath(label)).click();
         System.out.println("label button clicked");
         Thread.sleep(20000);
@@ -155,6 +161,10 @@ public class Main {
           String stationMark = obj.findElement(By.xpath(
               "/descendant::div[@class='sapBUiCctsMinWidth sapBUiCctsFormIdentifierIDAndDescription'][2]/div/div/input"))
               .getAttribute("value");
+          String [] stationmarknquantity = new String[]{quantity, stationMark};
+          smnq.add(stationmarknquantity);
+          data.setStationmarknquantity(smnq);
+
           System.out.println(quantity);
           System.out.println(stationMark);
         }
@@ -162,6 +172,8 @@ public class Main {
       obj.findElement(By.xpath("//span[.='Save and Close']")).click();
       Thread.sleep(170000);
       String inboundID = obj.findElement(By.xpath("/descendant::div[@class='sapMMsgStripMessage'][1]/span[1]")).getText();
+      data.setInboundid(inboundID);
+
       System.out.println(inboundID);
     }catch(Exception e){
       e.printStackTrace();
@@ -219,6 +231,9 @@ public class Main {
 
   public static void main(String[] args) {
     Main mTest = new Main();
-    mTest.invokeBrowser();
+    Json json = new Json();
+    ArrayList<Data> list = new ArrayList<Data>();
+    list = (ArrayList<Data>) json.getJsonData();
+    mTest.invokeBrowser(list);
   }
 }
