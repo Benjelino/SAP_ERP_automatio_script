@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c753e0d2-f3c0-4d8b-a2e1-d191560980f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597963081830</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="removed password and username variable">
+      <created>1597963152651</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597963152651</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -202,7 +209,8 @@
     <MESSAGE value="Implemented the for loop to run the entries according to the data in the json file" />
     <MESSAGE value="added the json to the create outbound functions" />
     <MESSAGE value="configured the functions to create both inbound and outbound at a loop of the json data" />
-    <option name="LAST_COMMIT_MESSAGE" value="configured the functions to create both inbound and outbound at a loop of the json data" />
+    <MESSAGE value="removed password and username variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed password and username variable" />
   </component>
   <component name="WindowStateProjectService">
     <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1597926143865">
@@ -213,30 +221,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="406" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1597777805777" />
-    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597963077171">
+    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597963149888">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597963077171" />
+    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597963149888" />
     <state x="300" y="119" key="FileChooserDialogImpl" timestamp="1597296470886">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="300" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597296470886" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1597962469810">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1597963168878">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597962469810" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1597962469810">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597963168878" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1597963168878">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597962469810" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1597962469810">
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597963168878" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1597963168878">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597962469810" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1597962469810">
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597963168878" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1597963168878">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597962469810" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597963168878" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1597296503364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
