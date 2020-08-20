@@ -13,8 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Main {
 
   public WebDriver obj;
-  private static String USERNAME = "MichaelK01";
-  private static String PASSWORD = "Welcome1";
+  private static String USERNAME = "";
+  private static String PASSWORD = "";
   private boolean rejected = false;
 
 

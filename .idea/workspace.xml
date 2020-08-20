@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c753e0d2-f3c0-4d8b-a2e1-d191560980f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium_for_sap/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597944603178</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="configured the functions to create both inbound and outbound at a loop of the json data">
+      <created>1597963081830</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597963081830</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -196,7 +201,8 @@
     <MESSAGE value="added json function" />
     <MESSAGE value="Implemented the for loop to run the entries according to the data in the json file" />
     <MESSAGE value="added the json to the create outbound functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the json to the create outbound functions" />
+    <MESSAGE value="configured the functions to create both inbound and outbound at a loop of the json data" />
+    <option name="LAST_COMMIT_MESSAGE" value="configured the functions to create both inbound and outbound at a loop of the json data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1597926143865">
@@ -207,10 +213,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="406" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1597777805777" />
-    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597944589119">
+    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597963077171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597944589119" />
+    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597963077171" />
     <state x="300" y="119" key="FileChooserDialogImpl" timestamp="1597296470886">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
