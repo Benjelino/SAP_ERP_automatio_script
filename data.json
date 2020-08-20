@@ -5,6 +5,7 @@
   "waybill" : 14702,
   "ctordate" : "31-7-20",
   "ctor" : 14589,
+  "purity" : 453952,
   "puritydate" : "31-7-20",
   "grade" : "P_TD_AGL",
   "tonage" : 9,
@@ -13,5 +14,7 @@
   "outboundid" : "UNO-1452",
   "secondaryid" : "0008270",
   "arrivaldate" : "30-07-2020",
-  "offloadingdate" : "31-07-2020"
+  "offloadingdate" : "31-07-2020",
+  "rejections" : 20,
+  "cropseason" : "Mc 01"
 } ]

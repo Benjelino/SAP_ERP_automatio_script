@@ -175,48 +175,56 @@
       <option name="project" value="LOCAL" />
       <updated>1597857565773</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented the for loop to run the entries according to the data in the json file">
+      <created>1597911673833</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597911673833</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add functions to get station marks and change grade" />
     <MESSAGE value="added the json parsing class and functions" />
     <MESSAGE value="added json function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added json function" />
+    <MESSAGE value="Implemented the for loop to run the entries according to the data in the json file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the for loop to run the entries according to the data in the json file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1597873357534">
+    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1597926143865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597873357534" />
+    <state x="926" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597926143865" />
     <state x="406" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1597777805777">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="406" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1597777805777" />
-    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597857560751">
+    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1597911669745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597857560751" />
+    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597911669745" />
     <state x="300" y="119" key="FileChooserDialogImpl" timestamp="1597296470886">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="300" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597296470886" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1597911016156">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1597943972308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597911016156" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1597911016156">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597943972308" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1597943972308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597911016156" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1597911016156">
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597943972308" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1597943972308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597911016156" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1597911016156">
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597943972308" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1597943972308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597911016156" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597943972308" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1597296503364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

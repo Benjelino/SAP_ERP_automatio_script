@@ -12,6 +12,7 @@ public class Data {
   private int waybill;
   private String ctordate;
   private int ctor;
+  private int purity;
   private String puritydate;
   private String grade;
   private int tonage;
@@ -21,20 +22,24 @@ public class Data {
   private  String secondaryid;
   private String arrivaldate;
   private String offloadingdate;
+  private int rejections;
+  private String cropseason;
 
 
   public Data(){}
 
   public Data(String frightforwarder, String date, String district, int waybill,
-      String ctordate, int ctor, String puritydate, String grade, int tonage,
+      String ctordate, int ctor, int purity, String puritydate, String grade, int tonage,
       ArrayList<String[]> stationmarknquantity, String inboundid, String outboundid,
-      String secondaryid, String arrivaldate, String offloadingdate) {
+      String secondaryid, String arrivaldate, String offloadingdate, int rejections,
+      String cropseason) {
     this.frightforwarder = frightforwarder;
     this.date = date;
     this.district = district;
     this.waybill = waybill;
     this.ctordate = ctordate;
     this.ctor = ctor;
+    this.purity = purity;
     this.puritydate = puritydate;
     this.grade = grade;
     this.tonage = tonage;
@@ -44,8 +49,33 @@ public class Data {
     this.secondaryid = secondaryid;
     this.arrivaldate = arrivaldate;
     this.offloadingdate = offloadingdate;
+    this.rejections = rejections;
+    this.cropseason = cropseason;
   }
 
+  public int getPurity() {
+    return purity;
+  }
+
+  public void setPurity(int purity) {
+    this.purity = purity;
+  }
+
+  public String getCropseason() {
+    return cropseason;
+  }
+
+  public void setCropseason(String cropseason) {
+    this.cropseason = cropseason;
+  }
+
+  public int getRejections() {
+    return rejections;
+  }
+
+  public void setRejections(int rejections) {
+    this.rejections = rejections;
+  }
 
   public String getArrivaldate() {
     return arrivaldate;

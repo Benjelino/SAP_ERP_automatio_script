@@ -14,7 +14,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -115,17 +117,11 @@ public class Json {
     Json json = new Json();
     ArrayList<Data> mData = (ArrayList<Data>) json.getJsonData();
     for(Data p : mData){
-      System.out.println(p.getDistrict());
+      ArrayList<String[]> stationnquantity = p.getStationmarknquantity();
+      String station = (String) stationnquantity.get(0)[1];
+      String[] splits = station.split(" ");
+      System.out.println(splits[0]);
     }
 
-//    ArrayList<String[]> list = new ArrayList<String[]>();
-//    list.add(new String []{ "40", "AGL-MAN -Manso Amenfi 2" });
-//    list.add(new String []{ "76", "AGL-MAN -Manso Amenfi fifty"});
-//    Data myData = new Data("KGL - Kiteko Ghana Ltd.", "31.07.2020 08:53 PM UTC", "Manso Amenfi",
-//         14702, "31-7-20", "0008270", 14589, "31-7-20", "P_TD_AGL", 9,list
-//         , "UNO-1452", "UNO-1452"
-//  );
-
-//    json.addData(myData);
   }
 }

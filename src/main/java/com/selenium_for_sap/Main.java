@@ -34,11 +34,11 @@ public class Main {
       mLogin();
       Thread.sleep(40000);
       for(Data p: list) {
-        checkInbound(p);
-//      checkOutbound();
+//        checkInbound(p);
+        checkOutbound(p);
         Thread.sleep(30000);
-        fillInbound(p);
-//      fillOutbound();
+//        fillInbound(p);
+        fillOutbound(p);
         Json writer = new Json();
         writer.addData(p);
       }
@@ -180,8 +180,12 @@ public class Main {
     }
   }
 
-  public void checkOutbound(){
+  public void checkOutbound(Data data){
     try {
+      ArrayList<String[]> stationnquantity = data.getStationmarknquantity();
+      String station = (String) stationnquantity.get(0)[1];
+      String[] splits = station.split(" ");
+      System.out.println();
       obj.findElement(By.id("__item52")).click();
       Thread.sleep(2000);
       obj.findElement(By.xpath("/descendant::div[starts-with(@id, '__item')][3]")).click();
@@ -192,9 +196,9 @@ public class Main {
       Thread.sleep(3000);
       obj.findElement(By.xpath("//a[.='Click here to execute the query']")).click();
       Thread.sleep(15000);
-      obj.findElement(By.xpath("//input[starts-with(@id, '__pane') and contains(@id, '-searchField-I')]")).sendKeys("TAK_B_AGL");
+      obj.findElement(By.xpath("//input[starts-with(@id, '__pane') and contains(@id, '-searchField-I')]")).sendKeys(splits[0]);
       obj.findElement(By.xpath("//div[starts-with(@id, '__pane') and contains(@id, '-searchField-search')]")).click();
-      Thread.sleep(10000);
+      Thread.sleep(15000);
       String rowCount = obj.findElement(By.xpath("//table[@class='sapBUiListTab']")).getAttribute("aria-rowcount");
       if(Integer.parseInt(rowCount) == 1){
         System.out.println("row count is equal to 1");
@@ -205,27 +209,70 @@ public class Main {
     }
   }
 
-  public void fillOutbound(){
+  public void fillOutbound(Data data) throws InterruptedException {
+
     //Freight input
     obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__input') and contains(@id, '-inner')][1]")).sendKeys("KGL - Kiteko Ghana Ltd.");
     //Shipment Date
     obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][1]")).clear();
-    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][1]")).sendKeys("31.07.2020 08:53 PM UTC");
+    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][1]")).sendKeys(data.getDate());
     //CTOR input
-    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][3]")).sendKeys("35782");
+    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][3]")).sendKeys(String.valueOf(data.getCtor()));
     //Actual weight
-    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][4]")).sendKeys("9.4");
+    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][4]")).sendKeys(String.valueOf(data.getTonage()));
     //CTOR Date
-    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][5]")).sendKeys("31-7-20");
+    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][5]")).sendKeys(data.getCtordate());
     //Summery Ref
-    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][6]")).sendKeys("MC 01");
+    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][6]")).sendKeys(data.getCropseason());
     //Purity Certification No.
-    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][7]")).sendKeys("08231");
+    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][7]")).sendKeys(String.valueOf(data.getPurity()));
     //Purity date
-    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][8]")).sendKeys("31-7-20");
+    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__field') and contains(@id, '-inner')][8]")).sendKeys(data.getPuritydate());
     //Waybill number
-    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__input') and contains(@id, '-inner')][2]")).sendKeys("7824");
+    obj.findElement(By.xpath("/descendant::input[starts-with(@id, '__input') and contains(@id, '-inner')][2]")).sendKeys(String.valueOf(data.getWaybill()));
 
+    ArrayList<String[]> stationnquantity = data.getStationmarknquantity();
+    int list = stationnquantity.size();
+
+    for(int i=1; i<list; i++) {
+      obj.findElement(By.xpath("//span[.='Add Sub Item']")).click();
+      try {
+        Thread.sleep(15000);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
+    Thread.sleep(10000);
+    for (String[] item: stationnquantity){
+      String station = (String) item[1];
+      String[] splits = station.split(" ");
+      if (list !=1){
+        for(int i=1; i<=list; i++) {
+          String addedRow =
+              "//td[starts-with(@id, '__table') and contains(@id," + "'" + "_r" + i + "_c7"
+                  + "'" + ")]/div/div/div/div/input";
+          String addedGrade =
+              "//td[starts-with(@id, '__table') and contains(@id," + "'" + "_r" + i + "_c8"
+                  + "'" + ")]/div/div/div/input";
+          String stationmark =
+              "//td[starts-with(@id, '__table') and contains(@id," + "'" + "_r" + i + "_c9"
+                  + "'" + ")]/div/div/div/input";
+
+          obj.findElement(By.xpath(addedRow)).clear();
+          obj.findElement(By.xpath(addedRow)).sendKeys(item[0]);
+          Thread.sleep(5000);
+          obj.findElement(By.xpath(stationmark)).sendKeys(item[1]);
+        }
+      }else {
+        obj.findElement(By.xpath("//td[starts-with(@id, '__table') and contains(@id,'_r0_c9')]/div/div/div/input")).sendKeys(splits[0]);
+        obj.findElement(By.xpath("//span[.='Remove Sub Item']")).click();
+        Thread.sleep(5000);
+        obj.findElement(By.xpath("//td[starts-with(@id, '__table') and contains(@id,'_r0_c7')]/div/div/div/div/input")).sendKeys(item[0]);
+      }
+
+    }
+    Thread.sleep(10000);
+    obj.findElement(By.xpath("//span[.='Release']")).click();
 
   }
 
